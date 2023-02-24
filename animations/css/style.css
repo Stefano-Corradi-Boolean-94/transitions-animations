@@ -1,0 +1,48 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background-color:brown;
+  animation-name: sposta_quadrato;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+
+@keyframes sposta_quadrato {
+  0%{
+    top: 0;
+    left: 0;
+    background-color:brown;
+  }
+  25%{
+    top:0;
+    left: calc(100% - 150px);
+    background-color:brown;
+  }
+  50%{
+    top:calc(100% - 150px);
+    left: calc(100% - 150px);
+    background-color:green;
+  }
+  75%{
+    top:calc(100% - 150px);
+    left: 0;
+    background-color:green;
+  }
+  100%{
+    top: 0;
+    left: 0;
+    background-color:brown;
+  }
+}
+
